@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Richard</title>
+    <style>
+        *{
+margin: 0;
+padding: 0;
+box-sizing: border-box
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient
+    (60deg, rgb(49, 49, 130), rgba(117, 11, 179, 0.836), rgb(221, 102, 17));
+    background-size: 300% 300%;
+    animation: bg 1.75s infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes bg {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.card{
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.3);
+}
+
+@keyframes naik {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    animation: melayang 3s infinite;
+}
+
+@keyframes melayang {
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+h1 {
+    margin-top: 20px;
+    text-shadow: 2px 1px black;
+}
+
+.typing {
+    margin-top: 10px;
+    color: rgb(255, 209, 109);
+}
+
+p {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.15);
+    background-color: rgb(255, 255, 113);
+}
+
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <img src="Richard foto.jpeg" alt="foto-profile">
+    <h1> Richard Setiawan </h1>
+    <h3 class="typing"> Orang Baik dan dermawan </h3>
+      
+    <p>
+        Saya belajar coding untuk modal mencari peluang baru, tantangan, dan eksplorasi diri
+    </p>
+
+    <button onclick="kenalan()">Mulai Coding</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
